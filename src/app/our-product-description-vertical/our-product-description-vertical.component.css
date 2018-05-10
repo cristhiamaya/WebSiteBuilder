@@ -1,0 +1,46 @@
+.our-product-description-vertical-body{
+  background-color: rgb(31, 31, 31);
+  font-family: 'Source Sans Pro', sans-serif;
+  color : white;
+  margin-left:30px;
+  margin-right:30px;
+  padding-bottom: 80px;
+}
+
+.product-description-div{
+  max-width: 1000px;
+}
+
+.title-our-product{
+  margin: 0;
+  font-size: 21px;
+  font-family: 'Roboto', sans-serif;
+  color: #21f9d9;
+}
+
+.characteristics-div{
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.our-product-description-vertical{
+  padding-bottom: 40px;
+}
+
+.small-line{
+  height: 2px;
+  margin-top: 60px;
+  margin-bottom: 5px;
+  width: 16px;
+  background-color: #21f9d9;
+}
+
+.image-div{
+  width: 100%;
+}
+
+.characteristic-image{
+  width: 90%;
+  margin-top: 30px;
+  max-width: 650px;
+}

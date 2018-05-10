@@ -1,0 +1,19 @@
+.register-btn{
+  font-family: 'Source Sans Pro', sans-serif;
+  background-color: rgba(0,0,0,0);
+  border: 2px solid white;
+  border-radius: 50px ;
+  color: white;
+  margin-top: 35px;
+  font-size: 20px;
+  padding-left: 10px;
+  padding-right:10px;
+  padding-bottom: 7px;
+  padding-top: 7px;
+  transition: background-color 1s ease-out;
+}
+
+.register-btn:hover{
+  background-color: rgb(73, 218, 138);
+  cursor: pointer;
+}

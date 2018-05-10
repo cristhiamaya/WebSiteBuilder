@@ -1,0 +1,23 @@
+.client-slider-body{
+  background-color: rgb(31, 31, 31);
+  height :150px;
+  border-bottom: 3px solid #08bba0;
+
+}
+
+.carousel{
+  width: 100%;
+  max-width: 1000px;
+}
+
+.slider-img{
+  width: 170px;
+}
+
+.slick-prev{
+  visibility: hidden !important;
+}
+
+.slick-next{
+  visibility: hidden !important;
+}

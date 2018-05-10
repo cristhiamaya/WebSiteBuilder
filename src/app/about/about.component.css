@@ -1,0 +1,28 @@
+.about-body{
+  font-family: 'Roboto', sans-serif;
+  color:white;
+  padding-top: 80px;
+  padding-bottom: 60px;
+}
+
+.small-line{
+  height: 2px;
+  width: 40px;
+  margin-bottom: 15px;
+  background-color: #08bba0;
+}
+
+.country-logo{
+  height: 40px;
+}
+
+.title-about{
+  margin-bottom:0px;
+  font-weight: bolder;
+  margin-top: 0px;
+  font-size: 35px;
+}
+
+.text-about{
+  max-width: 800px;
+}

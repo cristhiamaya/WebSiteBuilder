@@ -1,0 +1,40 @@
+.footer-item{
+  width: 200px;
+}
+
+.footer-body{
+  color: white;
+  font-family: 'Source Sans Pro', sans-serif;
+  background-color: rgb(31, 31, 31);
+}
+
+.material-icons{
+  margin-right: 10px;
+  font-size: 16px;
+}
+
+.long-line{
+  height: 1px;
+  width: 100%;
+  margin-bottom: 30px;
+  background-color: #08bba0;
+}
+
+.contact-info{
+  margin-bottom: 20px;
+}
+
+.text-footer-item{
+  margin: 0;
+  font-size: 14px;
+}
+
+.title-footer-item{
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.copyright-text{
+  margin-top: 20px;
+  margin-bottom: 30px;
+}

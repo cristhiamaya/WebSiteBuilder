@@ -20,7 +20,9 @@
             "tsConfig": "src/tsconfig.app.json",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/favicon.ico",
+              "src/assets",
+              "src/medisign-muted.mp4"
             ],
             "styles": [
               "src/styles.css"

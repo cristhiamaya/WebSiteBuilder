@@ -1,0 +1,35 @@
+.our-product-description-vertical-inv-body{
+  background-color:rgb(235, 235, 235);
+  padding-left:30px;
+  padding-right:30px;
+}
+
+.product-description-div{
+  max-width: 1000px;
+}
+
+.title-our-product{
+  margin: 0;
+  font-size: 21px;
+  font-family: 'Roboto', sans-serif;
+  color: #097061;
+}
+
+.characteristics-div{
+  margin-top: 40px;
+  margin-bottom: 80px;
+}
+
+.small-line{
+  height: 2px;
+  margin-top: 60px;
+  margin-bottom: 5px;
+  width: 16px;
+  background-color: #097061;
+}
+
+.characteristic-image{
+  width: 90%;
+  margin-top: 30px;
+  max-width: 650px;
+}

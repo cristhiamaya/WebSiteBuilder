@@ -1,0 +1,25 @@
+<div class="our-product-description-horizontal-body"
+    fxFlexLayout="column" fxLayoutAlign="center center"
+
+>
+  <div fxLayout="row"  fxLayoutGap="60px" fxLayout.xs="column" class="description-horizontal">
+    <div fxFlex="40">
+      <div class="small-line"></div>
+
+      <h1 class="product-title">
+        Generación de RIPS e informes para el Ministerio de Salud
+      </h1>
+      <app-characteristic-box
+        class="characteristic-single"
+        *ngFor="let characteristic of characteristics_list"
+        characteristicText={{characteristic.text}}
+        characteristicTitle={{characteristic.title}}
+        darkTheme="true"
+      >
+      </app-characteristic-box>
+    </div>
+    <div fxFlex="60">
+      <img src="https://i.imgur.com/1WsfMW9.png" class="product-image">
+    </div>
+  </div>
+</div>

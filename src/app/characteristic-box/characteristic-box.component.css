@@ -1,0 +1,17 @@
+.characteristic-single{
+  border-left: 2px solid #13b49c;
+  padding-left: 8px;
+  font-family: 'Source Sans Pro', sans-serif;
+  margin-bottom: 15px;
+}
+
+.characteristic-title{
+  font-size:18px;
+  margin: 0;
+  margin-bottom: 5px;
+  color: #1adbbe;
+}
+
+.characteristic-text{
+  margin: 0;
+}

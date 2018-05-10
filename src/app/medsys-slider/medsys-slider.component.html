@@ -1,0 +1,20 @@
+<div class="medsys-slider-body" fxLayoutAlign="center center">
+  <div fxLayout="row" fxLayout.xs="column" fxLayoutAlign="center center"
+       fxLayoutGap="40px"
+  >
+    <div class="text-div">
+      <h1 class="title-medsys" fxHide.xs>Medsys</h1>
+      <p class="txt-medsys">Medsys es un software especializado en el control de
+        información de consultorios médicos y en especial en
+        archivar Historias Clínicas y gráficos de pacientes
+        en un formato de Base de Datos.</p>
+      <app-register-btn></app-register-btn>
+    </div>
+    <ngx-slick class="carousel" #slickModal="slick-modal" [config]="slideConfig">
+      <div ngxSlickItem *ngFor="let slide of slides" class="slide">
+        <img class="slider-img" src={{slide.img}}>
+      </div>
+    </ngx-slick>
+  </div>
+
+</div>

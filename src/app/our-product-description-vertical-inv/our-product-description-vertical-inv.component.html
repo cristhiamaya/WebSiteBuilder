@@ -1,0 +1,25 @@
+<div class="our-product-description-vertical-inv-body"
+     fxLayoutAlign="center center"
+>
+  <div class="product-description-div" fxLayout="column">
+    <div>
+      <div class="small-line"></div>
+      <h1 class="title-our-product">Historia Clínica</h1>
+    </div>
+
+    <div class="image-div" fxLayoutAlign="center center">
+        <img src="https://i.imgur.com/OoOt4Ha.png" class="characteristic-image">
+    </div>
+
+    <div fxLayoutGap="40px" class="characteristics-div" fxLayout="row" fxLayout.xs="column">
+      <app-characteristic-box
+        class="characteristic-single"
+        *ngFor="let characteristic of characteristics_list"
+        characteristicText={{characteristic.text}}
+        characteristicTitle={{characteristic.title}}
+        >
+      </app-characteristic-box>
+    </div>
+
+  </div>
+</div>

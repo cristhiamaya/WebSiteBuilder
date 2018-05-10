@@ -1,0 +1,9 @@
+<div class="main-slider-body" fxLayoutAlign="center center">
+  <ngx-slick class="carousel" #slickModal="slick-modal" [config]="slideConfig">
+    <div ngxSlickItem *ngFor="let slide of slides" class="slide">
+      <h1 class="slider-title">{{slide.title}}</h1>
+      <p class="slider-text">{{slide.txt}}</p>
+      <app-register-btn></app-register-btn>
+    </div>
+  </ngx-slick>
+</div>

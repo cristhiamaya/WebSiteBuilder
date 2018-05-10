@@ -1,0 +1,7 @@
+<div class="client-slider-body" fxLayoutAlign="center center">
+  <ngx-slick class="carousel" #slickModal="slick-modal" [config]="slideConfig">
+    <div ngxSlickItem *ngFor="let slide of slides" class="slide">
+      <img class="slider-img" src={{slide.img}}>
+    </div>
+  </ngx-slick>
+</div>

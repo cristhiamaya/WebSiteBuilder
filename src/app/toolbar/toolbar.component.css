@@ -1,0 +1,10 @@
+.toolbar-body{
+  background-color: #27b6a1;
+  height: 80px;
+}
+.toolbar-logo{
+  height: 50px;
+}
+.toolbar-logo:hover{
+  cursor: pointer;
+}
