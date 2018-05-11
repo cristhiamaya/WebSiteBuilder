@@ -22,7 +22,8 @@
               "src/favicon.ico",
               "src/favicon.ico",
               "src/assets",
-              "src/medisign-muted.mp4"
+              "src/medisign.mp4"
+
             ],
             "styles": [
               "src/styles.css"

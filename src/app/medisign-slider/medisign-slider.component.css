@@ -1,0 +1,30 @@
+.medisign-slider-body{
+  background-color: rgb(31, 31, 31);
+  color: whitesmoke;
+  font-family: 'Source Sans Pro', sans-serif;
+  padding-top: 80px;
+}
+
+.carousel{
+  width: 50%;
+  max-width: 800px;
+}
+
+.description-slider{
+  max-width: 800px;
+  padding-top: 10px;
+  margin-top: 30px;
+  border-top: 2px solid #13b49c;
+}
+
+.slider-img{
+  width: 100%;
+}
+
+.medisign-slider{
+  width: 100%;
+}
+
+.paragraph-slider{
+  margin: 0;
+}

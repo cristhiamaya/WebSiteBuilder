@@ -1,0 +1,20 @@
+<div class="medisign-slider-body"  fxLayout="column" fxLayoutAlign="center center">
+  <div class="medisign-slider" fxLayoutAlign="center center" >
+    <ngx-slick class="carousel" #slickModal="slick-modal" [config]="slideConfig">
+      <div ngxSlickItem *ngFor="let slide of slides" class="slide">
+        <img class="slider-img" src={{slide.img}}>
+      </div>
+    </ngx-slick>
+  </div>
+  <div class="description-slider">
+    <p class="paragraph-slider">
+        <b>MediSign</b> Es un asistente digital para profesionales de la salud que les ayuda con su gestión documental.
+    </p>
+    <p class="paragraph-slider">
+        <b>MediSign</b> es una aplicación web creada por la empresa colombiana de desarrollo desoftware médico MedSys SAS, con más de 10 años de experiencia en el sector salud,que permite la creación de Consentimientos Médicos Informados en formato digital.
+    </p>
+    <p class="paragraph-slider">
+        La aplicación tiene como objetivo mejorar la gestión documental de los Consultorios,Clínicas y Hospitales y generar un impacto positivo en el Medio Ambiente.
+    </p>
+  </div>
+</div>

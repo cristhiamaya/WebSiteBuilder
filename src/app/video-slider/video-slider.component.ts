@@ -7,6 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class VideoSliderComponent implements OnInit {
 
+  muted = true;
+
+  playVideo() {
+    console.log('WAAAAAAAAAAAAAAT');
+    this.muted = false;
+  }
+
   constructor() { }
 
   ngOnInit() {

@@ -1,0 +1,26 @@
+.our-product-description-doublelist-body{
+  background-color: rgb(31, 31, 31);
+  padding-top:70px;
+  padding-bottom:70px;
+  color: white;
+}
+
+.description-doublelist{
+  max-width: 1000px;
+  text-align: center;
+}
+
+.characteristic-single{
+  text-align: left;
+}
+
+.title-characteristic{
+  font-size: 18px;
+  padding-bottom: 15px;
+  text-align: left;
+  color: #13b49c;
+}
+
+.description-characteristic{
+  text-align: left;
+}

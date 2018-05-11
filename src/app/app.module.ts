@@ -28,10 +28,23 @@ import {
     OurProductDescriptionVerticalInvComponent
   } from './our-product-description-vertical-inv/our-product-description-vertical-inv.component';
 import { CharacteristicBoxComponent } from './characteristic-box/characteristic-box.component';
-import { OurProductDescriptionHorizontalComponent } from './our-product-description-horizontal/our-product-description-horizontal.component';
-import { OurProductDescriptionHorizontalRightComponent } from './our-product-description-horizontal-right/our-product-description-horizontal-right.component';
-import { OurProductDescriptionHorizontalListComponent } from './our-product-description-horizontal-list/our-product-description-horizontal-list.component';
+import {
+  OurProductDescriptionHorizontalComponent } from './our-product-description-horizontal/our-product-description-horizontal.component';
+import {
+  OurProductDescriptionHorizontalRightComponent
+  } from './our-product-description-horizontal-right/our-product-description-horizontal-right.component';
+import {
+  OurProductDescriptionHorizontalListComponent
+  } from './our-product-description-horizontal-list/our-product-description-horizontal-list.component';
 import { VideoSliderComponent } from './video-slider/video-slider.component';
+import {VgCoreModule} from 'videogular2/core';
+import {VgControlsModule} from 'videogular2/controls';
+import {VgOverlayPlayModule} from 'videogular2/overlay-play';
+import {VgBufferingModule} from 'videogular2/buffering';
+import {
+   OurProductDescriptionDoublelistComponent
+  } from './our-product-description-doublelist/our-product-description-doublelist.component';
+import { MedisignSliderComponent } from './medisign-slider/medisign-slider.component';
 
 const routes: Routes = [
   { path: '', component: PageHomepageComponent },
@@ -61,6 +74,8 @@ const routes: Routes = [
     OurProductDescriptionHorizontalRightComponent,
     OurProductDescriptionHorizontalListComponent,
     VideoSliderComponent,
+    OurProductDescriptionDoublelistComponent,
+    MedisignSliderComponent,
   ],
   imports: [
     BrowserModule,
@@ -89,7 +104,11 @@ const routes: Routes = [
     MatChipsModule,
     MatExpansionModule,
     MatButtonToggleModule,
-    MatSnackBarModule
+    MatSnackBarModule,
+    VgCoreModule,
+    VgControlsModule,
+    VgOverlayPlayModule,
+    VgBufferingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

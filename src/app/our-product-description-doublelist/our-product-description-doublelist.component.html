@@ -1,0 +1,27 @@
+<div class="our-product-description-doublelist-body"
+     fxLayout="row" fxLayoutAlign="center center" >
+  <div class="description-doublelist" fxLayout="row" fxLayoutAlign="start start" fxLayoutGap="100px">
+    <div fxFlex="50">
+      <h1 class="title-characteristic"><i class="material-icons">verified_user</i> Seguridad</h1>
+      <app-characteristic-box
+        class="characteristic-single"
+        *ngFor="let characteristic of first_list"
+        characteristicText={{characteristic.text}}
+        darkTheme="true"
+        >
+      </app-characteristic-box>
+    </div>
+
+    <div fxFlex="50">
+      <h1 class="title-characteristic"><i class="material-icons">content_paste</i>Legalidad</h1>
+      <p class="description-characteristic">MedSys TAB cumple con los lineamientos estipulados en el artículo 28 de la Ley 527 de 1999, en relación con la validez de la firma digital: </p>
+      <app-characteristic-box
+      class="characteristic-single"
+      *ngFor="let characteristic of second_list"
+      characteristicText={{characteristic.text}}
+      darkTheme="true"
+      >
+      </app-characteristic-box>
+    </div>
+  </div>
+</div>

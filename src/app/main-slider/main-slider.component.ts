@@ -26,7 +26,7 @@ export class MainSliderComponent implements OnInit {
      'slidesToScroll': 1,
      'dots' : true,
      'autoplay' : true,
-     'autoplaySpeed': 1800
+     'autoplaySpeed': 4500
     };
 
   ngOnInit() {
