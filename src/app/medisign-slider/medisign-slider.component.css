@@ -6,15 +6,17 @@
 }
 
 .carousel{
-  width: 50%;
-  max-width: 800px;
+  width: 80%;
+  max-width: 880px;
 }
 
 .description-slider{
-  max-width: 800px;
+  max-width: 880px;
   padding-top: 10px;
   margin-top: 30px;
   border-top: 2px solid #13b49c;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
 .slider-img{

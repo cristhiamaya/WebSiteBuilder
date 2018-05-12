@@ -18,8 +18,7 @@ export class MainSliderComponent implements OnInit {
       txt : 'Medisign software de consentimientos informados, disponible ahora!',
       title: 'Medisign'
     },
-
-    ];
+  ];
 
   public slideConfig = {
     'slidesToShow': 1,

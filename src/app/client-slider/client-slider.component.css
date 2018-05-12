@@ -9,15 +9,13 @@
   width: 100%;
   max-width: 1000px;
 }
+.slide{
+  width: 200px;
+}
+.slider-img{
+  width: 150px;
+}
 
 .slider-img{
-  width: 170px;
-}
-
-.slick-prev{
-  visibility: hidden !important;
-}
-
-.slick-next{
-  visibility: hidden !important;
+  width: 150px;
 }

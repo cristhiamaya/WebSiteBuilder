@@ -7,11 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class VideoSliderComponent implements OnInit {
 
-  muted = true;
+  fullscreen = false;
 
-  playVideo() {
-    console.log('WAAAAAAAAAAAAAAT');
-    this.muted = false;
+  toggleFullscreen() {
+    this.fullscreen = !this.fullscreen;
   }
 
   constructor() { }

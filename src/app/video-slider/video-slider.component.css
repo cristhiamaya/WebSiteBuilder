@@ -11,6 +11,24 @@
   font-family: 'Source Sans Pro', sans-serif;
 }
 
+.video-fullscreen{
+  position: relative;
+  max-width: 70%;
+  max-height: 70%;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+}
+
+.video-div-fullscreen{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.95);
+  z-index: 10;
+}
 .fullscreen-video{
   width: 100%;
   height: 100%;
@@ -38,7 +56,8 @@
 
 .video-img{
   margin-top: 150px;
-  width: 400px;
+  max-width: 400px;
+  width: 90%;
 }
 
 .title{
@@ -54,7 +73,7 @@
 
 }
 
-.play-btn{
+.fullscreen-btn{
   max-width: 50px;
   background-color: rgba(0,0,0,0);
   border: 2px solid rgb(73, 218, 138);
@@ -69,7 +88,7 @@
   transition: background-color 1s ease-out;
 }
 
-.play-btn:hover{
+.fullscreen-btn:hover{
   background-color: rgb(73, 218, 138);
   cursor: pointer;
 }
@@ -95,5 +114,6 @@
   -moz-background-size: 100% 1px*2;
 }
 .description-video{
+  width: 95%;
   text-align: center;
 }

@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule, ReactiveFormsModule} from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { ToolbarComponent } from './toolbar/toolbar.component';
@@ -45,6 +46,12 @@ import {
    OurProductDescriptionDoublelistComponent
   } from './our-product-description-doublelist/our-product-description-doublelist.component';
 import { MedisignSliderComponent } from './medisign-slider/medisign-slider.component';
+import { MainSliderStaticComponent } from './main-slider-static/main-slider-static.component';
+import { RegisterDialogComponent } from './register-dialog/register-dialog.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HttpClientModule } from '@angular/common/http';
+import { HttpModule } from '@angular/http';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 
 const routes: Routes = [
   { path: '', component: PageHomepageComponent },
@@ -53,6 +60,9 @@ const routes: Routes = [
 ];
 
 @NgModule({
+  entryComponents: [
+    RegisterDialogComponent
+  ],
   declarations: [
     AppComponent,
     ToolbarComponent,
@@ -76,14 +86,21 @@ const routes: Routes = [
     VideoSliderComponent,
     OurProductDescriptionDoublelistComponent,
     MedisignSliderComponent,
+    MainSliderStaticComponent,
+    RegisterDialogComponent,
   ],
   imports: [
     BrowserModule,
+    ReactiveFormsModule,
+    FormsModule,
     RouterModule.forRoot(routes),
     SlickModule.forRoot(),
     FlexLayoutModule,
     MatButtonModule,
+    MatProgressSpinnerModule,
     MatCheckboxModule,
+    HttpClientModule,
+    HttpModule,
     MatSidenavModule,
     MatToolbarModule,
     MatIconModule,
@@ -108,7 +125,8 @@ const routes: Routes = [
     VgCoreModule,
     VgControlsModule,
     VgOverlayPlayModule,
-    VgBufferingModule
+    VgBufferingModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

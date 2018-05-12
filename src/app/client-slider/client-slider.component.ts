@@ -51,10 +51,33 @@ export class ClientSliderComponent implements OnInit {
 
     ];
   slideConfig = {
-    'slidesToShow': 4,
-     'slidesToScroll': 1,
-     'autoplay' : true,
-     'autoplaySpeed': 2000
+    'slidesToShow': 5,
+    'slidesToScroll': 1,
+    'autoplay' : true,
+    'autoplaySpeed': 2000,
+    'responsive': [
+      {
+        'breakpoint': 1080, 'settings': {
+        'rows': 1,
+        'slidesToShow': 4,
+        'slidesToScroll': 1
+        }
+      },
+      {
+        'breakpoint': 640, 'settings': {
+        'rows': 1,
+        'slidesToShow': 3,
+        'slidesToScroll': 1
+        }
+      },
+      {
+        'breakpoint': 480, 'settings': {
+        'rows': 1,
+        'slidesToShow': 2,
+        'slidesToScroll': 1
+      }
+    }
+  ]
     };
 
   constructor() { }

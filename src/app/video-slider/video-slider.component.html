@@ -1,5 +1,5 @@
 <div class="video-slider-body">
-  <div class="video-div" fxLayoutAlign="center center">
+  <div class="video-div" *ngIf="!fullscreen" fxLayoutAlign="center center">
     <div class="video-div" fxLayoutAlign="center center">
       <div class="video-description">
         <img class="video-img" src="https://i.imgur.com/0EXW4Ms.png">
@@ -7,15 +7,25 @@
             Software de administración de consentimientos informados.
         </p>
         <div fxLayout="column" fxLayoutGap="30px" fxLayoutAlign="center center">
-          <button class="play-btn">
-            <i class="material-icons">play_arrow</i>
+          <button class="fullscreen-btn" (click)="toggleFullscreen()">
+            <i class="material-icons" >play_arrow</i>
           </button>
           <app-register-btn></app-register-btn>
         </div>
       </div>
     </div>
-    <video autoplay (click)="playVideo()" [muted]="muted"  loop class="video scanLines">
+    <video autoplay loop [muted]="true" class="video scanLines">
       <source src="medisign.mp4" type="video/mp4">
     </video>
+  </div>
+  <div class="video-div-fullscreen" *ngIf="fullscreen"
+    fxLayout="column" fxLayoutGap="30px"
+    fxLayoutAlign="center center">
+    <video autoplay [muted]="false" controls class="video-fullscreen scanLines">
+      <source src="medisign.mp4" type="video/mp4">
+    </video>
+    <button class="fullscreen-btn" (click)="toggleFullscreen()">
+      <i class="material-icons" >arrow_back</i>
+    </button>
   </div>
 </div>

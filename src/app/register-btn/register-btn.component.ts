@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { MatDialog, MatDialogRef, MAT_DIALOG_DATA } from '@angular/material';
+import { RegisterDialogComponent } from '../register-dialog/register-dialog.component';
 
 @Component({
   selector: 'app-register-btn',
@@ -7,9 +9,30 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RegisterBtnComponent implements OnInit {
 
-  constructor() { }
+  constructor(public dialog: MatDialog) { }
 
   ngOnInit() {
+  }
+
+  /*
+  openDialog(): void {
+    this.dialog.open(RegisterDialogComponent, {
+      data: {
+        animal: 'panda'
+      }
+    });
+  }
+  */
+
+  openDialog(): void {
+    const dialogRef = this.dialog.open(RegisterDialogComponent, {
+      width: '500px',
+    });
+
+    dialogRef.afterClosed().subscribe(result => {
+      console.log('The dialog was closed');
+      console.log('result', result);
+    });
   }
 
 }

@@ -1,0 +1,48 @@
+<div class="title-div" fxLayout="row" fxLayoutGap="5px">
+    <i class="material-icons title-icon">mail</i>
+    <h1 mat-dialog-title class="contacto-title">Contacto</h1>
+</div>
+<div mat-dialog-content>
+  <div *ngIf="!saved && !loading">
+    <div class="example-container" fxLayout="column" fxLayoutGap="10px">
+      <mat-form-field fxFlex="100%">
+        <input matInput placeholder="Nombre" [(ngModel)]="name" [formControl]="nameFormControl">
+        <mat-error *ngIf="nameFormControl.hasError('required')">
+            El nombre es <strong>requerido</strong>
+        </mat-error>
+      </mat-form-field>
+
+      <mat-form-field fxFlex="100%">
+        <input matInput placeholder="Email" [formControl]="emailFormControl"
+                [errorStateMatcher]="matcher" [(ngModel)]="email">
+        <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
+          Ingresa un correo válido
+        </mat-error>
+        <mat-error *ngIf="emailFormControl.hasError('required')">
+          El correo es <strong>requerido</strong>
+        </mat-error>
+      </mat-form-field>
+
+      <mat-form-field fxFlex="100%">
+        <textarea matInput placeholder="Mensaje" [(ngModel)]="message"
+                  [formControl]="messageFormControl">
+        </textarea>
+        <mat-error *ngIf="messageFormControl.hasError('required')">
+          Ingresa un correo válido
+        </mat-error>
+      </mat-form-field>
+      <button class="signIn-btn" (click)="sendInformation()">
+        REGISTRARSE
+      </button>
+    </div>
+  </div>
+
+  <div *ngIf="loading" fxLayoutAlign="center center">
+    <mat-spinner> </mat-spinner>
+  </div>
+
+  <div fxLayout="column" class="saved-div" fxLayoutAlign="center center" *ngIf="saved">
+    <i class="thankyou-msg material-icons">check_circle_outline</i>
+    <h1>Enviado. Gracias por contactarnos!</h1>
+  </div>
+</div>
