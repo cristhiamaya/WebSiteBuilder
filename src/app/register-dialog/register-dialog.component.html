@@ -8,7 +8,7 @@
       <mat-form-field fxFlex="100%">
         <input matInput placeholder="Nombre" [(ngModel)]="name" [formControl]="nameFormControl">
         <mat-error *ngIf="nameFormControl.hasError('required')">
-            El nombre es <strong>requerido</strong>
+            Ingresa un nombre
         </mat-error>
       </mat-form-field>
 
@@ -19,7 +19,7 @@
           Ingresa un correo válido
         </mat-error>
         <mat-error *ngIf="emailFormControl.hasError('required')">
-          El correo es <strong>requerido</strong>
+          Ingresa un email
         </mat-error>
       </mat-form-field>
 
@@ -28,9 +28,12 @@
                   [formControl]="messageFormControl">
         </textarea>
         <mat-error *ngIf="messageFormControl.hasError('required')">
-          Ingresa un correo válido
+          Ingresa un mensaje
         </mat-error>
       </mat-form-field>
+
+      <re-captcha (resolved)="resolved($event)" siteKey={{key}}></re-captcha>
+
       <button class="signIn-btn" (click)="sendInformation()">
         REGISTRARSE
       </button>

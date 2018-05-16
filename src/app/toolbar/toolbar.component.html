@@ -1,3 +1,7 @@
-<div class="toolbar-body" fxLayout="row" fxLayoutAlign="center center" >
-  <img routerLink="" class="toolbar-logo" src="https://i.imgur.com/q2U09Dw.png">
+<div class="toolbar-body" fxLayout="row" fxLayout.xs="column" 
+     fxLayoutAlign="center center">
+  <div fxHide.xs fxFlex></div>
+  <img *ngIf="showLogo" routerLink="" class="toolbar-logo" src="https://i.imgur.com/q2U09Dw.png">
+  <div fxHide.xs fxFlex></div>
+<!--  <app-login-btn ></app-login-btn> -->
 </div>

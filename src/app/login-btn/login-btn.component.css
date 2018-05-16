@@ -1,0 +1,16 @@
+.login-txt{
+  font-family: 'Source Sans Pro', sans-serif;
+  background-color: rgba(0,0,0,0);
+  color: white;
+  font-size: 20px;
+  text-decoration-line: none;
+  padding-right: 10px;
+  border: 2px solid rgba(0,0,0,0);
+  transition: background-color 1s ease-out;
+}
+
+.register-btn:hover{
+  background-color: rgb(73, 218, 138);
+  cursor: pointer;
+}
+  

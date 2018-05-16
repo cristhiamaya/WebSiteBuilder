@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule} from '@angular/forms';
-
+import { RecaptchaModule } from 'ng-recaptcha';
 import { AppComponent } from './app.component';
 import { ToolbarComponent } from './toolbar/toolbar.component';
 import { MainSliderComponent } from './main-slider/main-slider.component';
@@ -52,16 +52,22 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
 import { HttpModule } from '@angular/http';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { LoginBtnComponent } from './login-btn/login-btn.component';
+import { PageLoginComponent } from './page-login/page-login.component';
+import { ToastrModule } from 'ngx-toastr';
+import { DialogAlertComponent } from './dialog-alert/dialog-alert.component';
 
 const routes: Routes = [
   { path: '', component: PageHomepageComponent },
   { path: 'medsys', component: PageMedsysComponent},
-  { path: 'medisign', component: PageMedisignComponent}
+  { path: 'medisign', component: PageMedisignComponent},
+  { path: 'login', component: PageLoginComponent}
 ];
 
 @NgModule({
   entryComponents: [
-    RegisterDialogComponent
+    RegisterDialogComponent,
+    DialogAlertComponent
   ],
   declarations: [
     AppComponent,
@@ -88,11 +94,16 @@ const routes: Routes = [
     MedisignSliderComponent,
     MainSliderStaticComponent,
     RegisterDialogComponent,
+    LoginBtnComponent,
+    PageLoginComponent,
+    DialogAlertComponent,
   ],
   imports: [
+    ToastrModule.forRoot(),
     BrowserModule,
     ReactiveFormsModule,
     FormsModule,
+    RecaptchaModule.forRoot(),
     RouterModule.forRoot(routes),
     SlickModule.forRoot(),
     FlexLayoutModule,

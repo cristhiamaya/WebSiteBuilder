@@ -4,7 +4,20 @@
 }
 .toolbar-logo{
   height: 50px;
+  padding-left: 85px;
 }
 .toolbar-logo:hover{
   cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+  .toolbar-logo {
+    padding-left: 0px;
+    padding-top:10px;
+    padding-bottom:10px;    
+  }
+  .toolbar-body{
+    background-color: #27b6a1;
+    height: 100px;
+  }
 }
