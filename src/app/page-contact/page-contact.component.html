@@ -1,0 +1,31 @@
+<div class="page-contact-body" fxLayoutAlign="center center">
+  <div class="contact-form fadeIn animated" >
+    <h2 class="title">Contáctanos</h2>
+    <form [ngClass]="fadeexit"
+        [formGroup]="contactFormGroup" fxLayout="column" fxLayoutAlign="center">
+      <mat-form-field appearance="outline" color="accent" class="input-class">
+        <mat-label>Nombre</mat-label>
+        <input formControlName="name" autofocus matInput>
+        <span class="input-errors" *ngIf="contactFormGroup.controls.name.errors!=null && contactFormGroup.controls.name.touched">
+          <mat-error class="error" *ngIf="contactFormGroup.controls.name.errors.required">El nombre es <b>requerido</b>  </mat-error>
+        </span>
+      </mat-form-field>
+
+      <mat-form-field appearance="outline" color="accent" class="input-class">
+        <mat-label>Correo</mat-label>
+        <input formControlName="email" matInput>
+        <span class="input-errors" *ngIf="contactFormGroup.controls.email.errors!=null && contactFormGroup.controls.email.touched">
+          <mat-error class="error" *ngIf="contactFormGroup.controls.email.errors.required">El correo es <b>requerido</b>  </mat-error>
+          <mat-error class="error" *ngIf="contactFormGroup.controls.email.errors.pattern">El correo no es válido </mat-error>
+        </span>
+      </mat-form-field>
+      
+      <mat-form-field appearance="outline" color="accent" class="input-class">
+        <mat-label>Notas(Opcional)</mat-label>
+        <textarea formControlName="notes" class="textarea" matInput></textarea>
+      </mat-form-field>  
+
+      <button class="btn-send">Enviar</button>
+    </form>
+  </div>
+</div>

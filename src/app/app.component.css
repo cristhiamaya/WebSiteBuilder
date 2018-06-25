@@ -1,0 +1,10 @@
+.app-subbody{
+ background-color: #ec609b;
+ width: 100%;
+ max-width:1100px;
+ box-shadow: 0px 0px 15px black; 
+}
+.app-body{
+ background-color: #f8eaf8;
+ 
+}

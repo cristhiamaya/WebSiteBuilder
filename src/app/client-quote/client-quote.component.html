@@ -1,0 +1,17 @@
+<div class="client-quote" fxLayoutAlign="center center" >
+  <div class="client-quote-subdiv" fxLayoutAlign="start center" fxLayout="column">
+    <div>
+      <h1>Nuestros Clientes</h1>
+    </div>
+    <div class="our-clients-carousel" fxLayout="row">
+      <h2 class="single-quote">"</h2> 
+      <div class="current" [ngClass]="animationSlide">
+        <p class="quote">{{currentSlide.quote}}</p>
+        <h4 class="name">{{currentSlide.name}}</h4>
+      </div>
+    </div>
+    <div class="steps" *ngFor="let slide of slidesClient">
+
+    </div>
+  </div>
+</div>

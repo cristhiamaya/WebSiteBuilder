@@ -1,8 +1,7 @@
 <div class="page-homepage-body">
-  <app-toolbar [showLogo]="false"></app-toolbar>
-  <app-main-slider-static></app-main-slider-static>
-  <app-client-slider></app-client-slider>
-  <app-our-products></app-our-products>
-  <app-about></app-about>
-  <app-footer></app-footer>
+  <app-about-doctor></app-about-doctor>
+  <app-timeline [title]="title_experience" [timelineObjects]="timelineObjects_experience"></app-timeline>
+  <app-timeline [title]="title_professional" [timelineObjects]="timelineObjects_professional"></app-timeline>
+  <app-timeline [title]="title_other" [timelineObjects]="timelineObjects_other"></app-timeline>
+  <app-client-quote></app-client-quote>
 </div>

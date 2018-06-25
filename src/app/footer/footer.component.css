@@ -1,7 +1,7 @@
 .footer-body{
   color: white;
   font-family: 'Source Sans Pro', sans-serif;
-  background-color: rgb(31, 31, 31);
+  background-color: #8a3c5e;
 }
 
 .material-icons{
@@ -13,11 +13,16 @@
   height: 1px;
   width: 100%;
   margin-bottom: 30px;
-  background-color: #08bba0;
+  background-color: #b6366d;
 }
 
 .contact-info{
   margin-bottom: 20px;
+}
+.logo{
+  height: 60px;
+  margin-top: -30px;
+  margin-bottom:30px;
 }
 
 .text-footer-item{
@@ -32,6 +37,7 @@
 
 .copyright-text{
   text-align: center;
+  font-size: 13px;
   margin-top: 20px;
   margin-bottom: 30px;
 }

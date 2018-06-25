@@ -1,7 +1,46 @@
-<div class="toolbar-body" fxLayout="row" fxLayout.xs="column" 
-     fxLayoutAlign="center center">
-  <div fxHide.xs fxFlex></div>
-  <img *ngIf="showLogo" routerLink="" class="toolbar-logo" src="https://i.imgur.com/q2U09Dw.png">
-  <div fxHide.xs fxFlex></div>
-<!--  <app-login-btn ></app-login-btn> -->
+<div #toolbar class="toolbar-body">
+  <div fxShow="true" fxShow.xs="false"
+    class="toolbar-body-sub" fxLayout="row" fxLayoutAlign="center center">
+    <div fxHide.xs fxFlex></div>
+    <div *ngFor="let menuItem of menuItems" (click)="changeMenu(menuItem)" 
+      [ngClass]="menuItem.open?'menuItemSelected':'menuItems'"
+      fxLayoutAlign="center center">
+      <span class="menuItem fadeInLeft animated" >{{menuItem.name}}</span>
+    </div>
+    <div fxHide.xs fxFlex></div>
+  </div>
+  <div fxShow="false" fxShow.xs="true"
+    class="toolbar-body-sub-mobile" fxLayout="row"
+    fxLayoutAlign="left center">
+    <button class="btn-menu" (click)="openMobileMenu()">
+      <i class="btn-menu-txt material-icons">
+      menu
+      </i>
+    </button>
+  </div>  
+  
+  <div *ngIf="fixedMenu" class="toolbar-body-sub-fixed slideInDown animated" 
+    fxLayout="row" fxLayoutAlign="center center">
+    <div fxHide.xs fxFlex></div>
+    <div *ngFor="let menuItem of menuItems" (click)="changeMenu(menuItem)" 
+      [ngClass]="menuItem.open?'menuItemSelected':'menuItems'"
+      fxLayoutAlign="center center">
+      <span class="menuItem" >{{menuItem.name}}</span>
+    </div>
+    <div fxHide.xs fxFlex></div>
+  </div>
+
+  <div class="menuItems-mobile fadeIn animated" fxLayoutAlign="center center" fxLayout="column"
+    fxShow="false" fxShow.xs="true" *ngIf="mobileMenuOpened">
+     <div *ngFor="let menuItem of menuItems" [routerLink]="menuItem.route"
+      class="items-mobile" fxLayoutAlign="center center">
+      <span class="menuItem" >{{menuItem.name}}</span>
+    </div>
+    <button class="btn-mobile" (click)="openMobileMenu()">
+      <i class="icon-mobile material-icons">keyboard_arrow_up</i>
+    </button>
+  </div>
+
+  <div class="obscure-mobile" *ngIf="mobileMenuOpened" fxShow="false" fxShow.xs="true">
+  </div>
 </div>

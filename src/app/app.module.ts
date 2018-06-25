@@ -20,8 +20,6 @@ import { OurProductItemComponent } from './our-product-item/our-product-item.com
 import { AboutComponent } from './about/about.component';
 import { FooterComponent } from './footer/footer.component';
 import { RouterModule, Routes } from '@angular/router';
-import { PageMedsysComponent } from './page-medsys/page-medsys.component';
-import { PageMedisignComponent } from './page-medisign/page-medisign.component';
 import { MedsysSliderComponent } from './medsys-slider/medsys-slider.component';
 import { OurProductDescriptionVerticalComponent } from './our-product-description-vertical/our-product-description-vertical.component';
 import { RegisterBtnComponent } from './register-btn/register-btn.component';
@@ -53,15 +51,26 @@ import { HttpClientModule } from '@angular/common/http';
 import { HttpModule } from '@angular/http';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { LoginBtnComponent } from './login-btn/login-btn.component';
-import { PageLoginComponent } from './page-login/page-login.component';
 import { ToastrModule } from 'ngx-toastr';
 import { DialogAlertComponent } from './dialog-alert/dialog-alert.component';
+import { MainSliderCurvedComponent } from './main-slider-curved/main-slider-curved.component';
+import { AboutDoctorComponent } from './about-doctor/about-doctor.component';
+import { TimelineComponent } from './timeline/timeline.component';
+import { ClientQuoteComponent } from './client-quote/client-quote.component';
+import { Observable } from 'rxjs/Rx';
+import 'rxjs/add/operator/map';
+import { map } from 'rxjs/operators';
+import { PageServicesComponent } from './page-services/page-services.component';
+import { ServiceItemComponent } from './service-item/service-item.component';
+import { ServiceListComponent } from './service-list/service-list.component';
+import { ServiceDetailComponent } from './service-detail/service-detail.component';
+import { PageContactComponent } from './page-contact/page-contact.component';
+import { TimelineObjectComponent } from './timeline-object/timeline-object.component';
 
 const routes: Routes = [
   { path: '', component: PageHomepageComponent },
-  { path: 'medsys', component: PageMedsysComponent},
-  { path: 'medisign', component: PageMedisignComponent},
-  { path: 'login', component: PageLoginComponent}
+  { path: 'servicios', component: PageServicesComponent },
+  { path: 'contacto', component: PageContactComponent },
 ];
 
 @NgModule({
@@ -78,9 +87,7 @@ const routes: Routes = [
     OurProductsComponent,
     OurProductItemComponent,
     AboutComponent,
-    FooterComponent,
-    PageMedsysComponent,
-    PageMedisignComponent,
+    FooterComponent,    
     MedsysSliderComponent,
     OurProductDescriptionVerticalComponent,
     RegisterBtnComponent,
@@ -95,8 +102,17 @@ const routes: Routes = [
     MainSliderStaticComponent,
     RegisterDialogComponent,
     LoginBtnComponent,
-    PageLoginComponent,
     DialogAlertComponent,
+    MainSliderCurvedComponent,
+    AboutDoctorComponent,
+    TimelineComponent,
+    ClientQuoteComponent,
+    PageServicesComponent,
+    ServiceItemComponent,
+    ServiceListComponent,
+    ServiceDetailComponent,
+    PageContactComponent,
+    TimelineObjectComponent,
   ],
   imports: [
     ToastrModule.forRoot(),

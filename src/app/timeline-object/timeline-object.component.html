@@ -1,0 +1,9 @@
+<div #timelineObjId class="whole-timelineobj" [ngClass]="animClass" fxLayout="row">
+  <div class="triangle"></div>
+  <div class="timeline-obj-description" >
+
+    <div class="description" *ngFor="let desc of timelineObj.description">
+      <span class="date">{{desc.date}} | </span> {{desc.description}}
+    </div>
+  </div>
+</div>

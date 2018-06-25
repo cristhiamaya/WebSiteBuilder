@@ -1,0 +1,124 @@
+
+.text-logo{
+ height: 70px;
+}
+.title-div{
+ margin-left: 3px;
+ margin-right: 3px;
+}
+.subtitle-div{
+ padding-left: 20px;
+ margin-top: 0;
+}
+p{
+ text-align: center;
+ margin: 0;
+ font-size: 20px;
+}
+.fade-in{
+ opacity: 1
+}
+
+
+@media (min-width:481px) {
+ .main-slider-static-body{
+  height:100vh;
+  max-height: 400px;
+  color: white;
+  background-image: linear-gradient(to top, #ec609b, #ed5fa4, #ee5fad, #ed5fb7, #ec60c1);
+  border-bottom-left-radius: 75px;
+  border-bottom: 1px solid white;
+  font-family: 'Dancing Script', cursive;
+ }
+ .subtitle{
+  margin-left: 55px;
+  font-weight: thin;
+  margin-top: 5px;
+  font-size: 20px;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+ }
+ h1{
+  margin-bottom: 0px;
+  font-weight: bold;
+  font-size: 80px;
+  margin-left: -15px;
+  margin-bottom: 1px solid white;
+ }
+ .info{
+  margin-bottom: 90px;
+  margin-top: 10px;
+ }
+ .info-txt{
+  margin-left: 5px;
+  margin-top: -10px;
+ }
+ .item-info{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+ }
+ .icon-slider{
+  font-size: 18px;
+  border: 1px solid white;
+  border-radius: 50%;
+  padding: 5px;
+ }
+ .img-slider{
+  height: 90px;
+  margin-top: -15px;
+ }
+}
+
+@media (max-width:480px) {
+ .main-slider-static-body{
+  height:100vh;
+  max-height: 500px;
+  color: white;
+  border-bottom: 1px solid white;
+
+  background-image: linear-gradient(to top, #ec609b, #ed5fa4, #ee5fad, #ed5fb7, #ec60c1);
+  font-family: 'Dancing Script', cursive;
+ }
+ .subtitle{
+  margin-left: 55px;
+  font-weight: thin;
+  margin-top: 5px;
+  margin-bottom: 100px;
+  font-size: 20px;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+ }
+ h1{
+  margin-bottom: 0px;
+  font-weight: bold;
+  font-size: 50px;
+  margin-left: -15px;
+  margin-bottom: 1px solid white;
+ }
+ .info{
+  margin-bottom: 90px;
+  margin-top: 10px;
+ }
+ .info-txt{
+  margin-left: 0px;
+  margin-top: -10px;
+ }
+ .img-slider{
+  height: 90px;
+  margin-top: -15px;
+  margin-left: 20px;
+ }
+ .item-info{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  margin-bottom: 15px;
+ }
+ .icon-slider{
+  font-size: 14px;
+  border: 1px solid white;
+  border-radius: 50%;
+  padding: 5px;
+  margin-right: 8px;
+ }
+
+}

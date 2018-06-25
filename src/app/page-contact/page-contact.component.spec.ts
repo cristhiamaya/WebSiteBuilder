@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { PageMedisignComponent } from './page-medisign.component';
+import { PageContactComponent } from './page-contact.component';
 
-describe('PageMedisignComponent', () => {
-  let component: PageMedisignComponent;
-  let fixture: ComponentFixture<PageMedisignComponent>;
+describe('PageContactComponent', () => {
+  let component: PageContactComponent;
+  let fixture: ComponentFixture<PageContactComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ PageMedisignComponent ]
+      declarations: [ PageContactComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(PageMedisignComponent);
+    fixture = TestBed.createComponent(PageContactComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

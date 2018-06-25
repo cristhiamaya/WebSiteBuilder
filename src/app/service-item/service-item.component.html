@@ -1,0 +1,7 @@
+<div #serviceItem class="service-item-body" (click)="changeService(service)" fxLayout="column">
+  <div class="full-item" [ngClass]="selectedService()"></div>
+  <div class="title" fxLayoutAlign="center center" fxLayout="column">
+    <img src="https://i.imgur.com/akuglvi.png" class="image">
+    <span class="name">{{service.name}}</span>
+  </div>
+</div>

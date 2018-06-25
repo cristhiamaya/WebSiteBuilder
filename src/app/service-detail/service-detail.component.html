@@ -1,0 +1,26 @@
+<div #serviceDetail class="service-detail-body" fxLayoutAlign="center center" 
+     fxLayout="column" fxLayout.xs="row">
+  
+  <mat-card class="card" fxLayout="row" fxLayout.xs="column">
+    <div>
+      <img src="https://i.imgur.com/akuglvi.png" class="image">
+    </div>
+    <div class="service-detail" >
+      <div fxLayoutAlign="center center">
+        <h1 class="title">
+          {{service.name}}
+        </h1>
+      </div>
+      <div class="description-div" fxLayout="column" >
+        <div class="description">
+          <p>
+            {{service.description}}
+          </p>
+        </div>
+        <div class="price" fxLayout="start center">
+          <h2>{{service.price| currency }}</h2>
+        </div>
+      </div> 
+    </div>
+  </mat-card>
+</div>

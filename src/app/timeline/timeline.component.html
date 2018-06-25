@@ -1,0 +1,20 @@
+<div class="timeline-body" #timeline fxLayoutAlign="center center" fxLayout="column">
+  
+  <div class="title-div">
+    <h1>{{title}}</h1>
+  </div>
+  
+  <div class="timeline-div">
+    <div *ngFor="let timelineObj of timelineObjects" class="timeline-obj" fxLayout="row">
+      <div class="year">
+        {{timelineObj.year}}
+      </div>
+      <div class="time-obj" fxFlex="5" fxLayout="column">
+          <div class="circle"></div>
+          <div class="line"></div>
+        </div>
+      <app-timeline-object [timelineObj]="timelineObj"></app-timeline-object>
+    </div>
+  </div>
+
+</div>

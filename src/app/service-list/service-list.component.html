@@ -1,0 +1,15 @@
+<div class="service-list-body" fxLayout="column" fxLayoutAlign="center center">
+
+  <div class="service-list" fxLayout="row" fxLayoutGap="25px" 
+    layout-wrap fxLayout.xs="column" fxLayoutAlign="center center">
+    <app-service-item class="fadeIn animated service-item" (change)="changeService(service)"
+        *ngFor="let service of services" [service]="service" [serviceSelected]="serviceSelected">
+    </app-service-item>
+  </div>
+
+  <span *ngIf="serviceSelected!=null" class="fadeInDown animated service-selected">
+    <app-service-detail [service]="serviceSelected"></app-service-detail>
+  </span>
+
+</div>
+

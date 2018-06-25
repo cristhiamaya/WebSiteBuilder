@@ -1,0 +1,32 @@
+.whole-timelineobj{
+ margin-top: 5px;
+}
+.triangle{
+ width: 0;
+ height: 0;
+ margin-right: -1px;
+ border-right: 0px solid transparent;
+ border-top: 22px solid rgb(255, 255, 255);
+ border-bottom: 0px solid rgb(255, 255, 255);
+ border-left: 25px solid transparent;
+}
+.timeline-obj-description{
+ margin-bottom: 40px;
+ background-color: rgb(255, 255, 255);
+ padding: 20px;
+ border-radius: 2px;
+ border-top-left-radius: 0px;
+ box-shadow: 0px 0px 0px #471026;
+ color: rgb(48, 48, 48);
+ margin-right: 10px;
+}
+.description{
+ font-weight: thin;
+ padding-bottom: 10px;
+}
+.date{
+ color: #eb2574;
+}
+.noVisible{
+ opacity: 0;
+}
